@@ -7,8 +7,10 @@ use Illuminate\Http\Request;
 class DemoController extends Controller
 {
 
-    function MyName($namevalue){
-        return $namevalue;
+    function MyName($firstName,$middleName,$lastName){
+        return "FirstName:".$firstName.
+        "<br>MiddleName:".$middleName.
+        "<br>LastName:".$lastName;
 
     }
     function Home(){
