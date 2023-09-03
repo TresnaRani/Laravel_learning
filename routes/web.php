@@ -1,21 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Homecontroller;
+use App\Http\Controllers\DemoController;
 
-
-
-Route::get('/', function () {
-    return view('Home');
-});
-
-Route::get('/about', function () {
-    return view('About');
-});
-
-Route::get('/home','Homecontroller@Home');
-Route::get('/a',[Homecontroller::class,'About']);
-Route::get('/contact',[Homecontroller::class,'Contact']);
-
+Route::get('/', [DemoController::class, 'Home']);
+Route::get('/about',[DemoController::class, 'About']);
+Route::get('/contact',[DemoController::class, 'Contact']);
 
 

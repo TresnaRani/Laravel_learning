@@ -7,6 +7,10 @@
 </head>
 <body>
     <h3>I am from Contact</h3>
+    <a href="{{url('/')}}">Home</a>
+    <a href="{{url('about')}}">About</a>
+    <a href="{{url('contact')}}">Contact</a>
+    
     
 </body>
 </html>

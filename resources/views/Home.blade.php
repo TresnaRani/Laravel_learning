@@ -7,6 +7,9 @@
 </head>
 <body>
     <p>My name is home view</p>
+    <a href="{{url('/')}}">Home</a>
+    <a href="{{url('about')}}">About</a>
+    <a href="{{url('contact')}}">Contact</a>
     
 </body>
 </html>

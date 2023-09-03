@@ -6,6 +6,9 @@
     <title>About</title>
 </head>
 <body>
-    <h4>I am from About</h4>
+    <a href="{{url('/')}}">Home</a>
+    <a href="{{url('about')}}">About</a>
+    <a href="{{url('contact')}}">Contact</a>
+    
 </body>
 </html>
