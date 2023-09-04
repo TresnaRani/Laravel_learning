@@ -8,11 +8,10 @@ class DemoController extends Controller
 {
 
     function MyName($firstName,$middleName,$lastName){
-        return "FirstName:".$firstName.
-        "<br>MiddleName:".$middleName.
-        "<br>LastName:".$lastName;
+       return view('DemoView');
 
     }
+
     function Home(){
         return view('Home');
 
