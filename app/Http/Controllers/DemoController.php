@@ -8,7 +8,7 @@ class DemoController extends Controller
 {
 
     function MyName($firstName,$middleName,$lastName){
-       return view('DemoView');
+       return view('DemoView',['firstkey'=>$firstName,'middlekey'=>$middleName,'lastkey'=>$lastName]);
 
     }
 
