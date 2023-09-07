@@ -7,23 +7,23 @@ Route::get('/Name/{firstName}/{middleName}/{lastName}', [DemoController::class, 
 Route::get('/', [DemoController::class, 'Home']);
 
 
-Route::group(['prefix'='account'],function(){
+Route::group(['prefix'=>'account'],function(){
 
-Route::get('/profile',function{
+Route::get('/profile',function(){
     return "profile";
 
 });
-Route::get('/login',function{
+Route::get('/login',function(){
     return "login";
 });
-Route::get('/logout',function{
+Route::get('/logout',function(){
     return "logout";
 });
-Route::get('/signup',function{
+Route::get('/signup',function(){
     return "signup";
 
 });
-Route::get('/updateProfile',function{
+Route::get('/updateProfile',function(){
     return "updateProfile";
 
 });
