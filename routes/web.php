@@ -6,7 +6,7 @@ use App\Http\Controllers\DemoController;
 //Route::get('/Name/{firstName}/{middleName}/{lastName}', [DemoController::class, 'MyName']);
 //Route::get('/', [DemoController::class, 'Home']);
 
-
+/*
 Route::group(['prefix'=>'account'],function(){
 
 Route::get('/profile',function(){
@@ -29,6 +29,13 @@ Route::get('/updateProfile',function(){
 });
 
 });
+
+
+Route::get('/server', [inheritcontroller::class]);
+Route::get('home',[inheritcontroller::class,'home']);
+*/
+
+Route::get("/test", function () {return view("About");});
 
 
 
